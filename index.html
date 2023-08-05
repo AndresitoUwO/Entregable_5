@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,132 @@
 
 
     <style>
+        header {
+            margin-left: 5%;
+        }
 
-section{
-    background-image: url(img/hero.jpg);
-    
-    
-}
+        section {
+            background-image: url("img/hero.jpg");
+            width: 100%;
+            height: 400px;
+            margin-top: 10px;
+            background-size: cover;
+            background-position: center center;
+        }
 
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 98%;
+        }
 
+        nav {
+            text-align: right;
+            width: 90%;
+        }
+
+        h2 {
+            text-align: center;
+            color: goldenrod;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            text-align: center;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bold {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .lighter {
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            width: 35%;
+            padding: 5px;
+            margin-left: 10%;
+
+        }
+
+        span {
+            color: white;
+            margin: 5px;
+        }
+
+        #uno {
+            grid-column: 1 / 4;
+            grid-row: 1/2;
+            font-size: 30px;
+        }
+
+        #dos {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            font-size: 20px;
+            text-align: right;
+
+        }
+
+        #tres {
+            grid-column: 3/4;
+            grid-row: 2/4;
+            font-size: 40px;
+        }
+
+        #cuatro {
+            grid-column: 3/4;
+            grid-row: 4/5;
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body>
-<main>
-    <header >
-        <img src="img/logo.svg" alt="">
+    <main>
+        <header>
+            <img src="img/logo.svg" alt="">
+
+        </header>
         <hr>
-    </header>
-    <nav>
-        <a href="#1">Residentes</a>
-        <a href="#2">Negocios</a>
-        <a href="#1">Visitantes</a>
-        <a href="#1">Gobierno</a>
-    </nav>
+        <nav>
+            <a href="#1">Residentes</a>
+            <a href="#2">Negocios</a>
+            <a href="#1">Visitantes</a>
+            <a href="#1">Gobierno</a>
+        </nav>
 
 
-    <section>
-        <img src="img/hero.jpg" alt="">
-    </section>
 
-    <footer>
-        <h2>¿Quien se puede inscribir?</h2>
-        <p>cualquier persona que quiera aprender a programar codigo y cuente con 4-8 horas disponibles a la semana <br>*menores de edad deberan entrar acompñados de un adulto</p>
-    
-    </footer>
-</main>
-    
+        <section>
+
+            <div class="grid-container">
+                <span id="uno" class="bold">APRENDE A PROGRAMAR</span>
+                <span id="dos" class="lighter">EN LAS</span>
+                <span id="tres" class="bold">ESCUELAS <br> DE CODIGO</span>
+                <span id="cuatro" class="lighter">DE LA CDMX</span>
+
+            </div>
+        </section>
+
+        <footer>
+            <h2>¿Quién se puede inscribir?</h2>
+            <p class="bold">Cualquier persona que quiera aprender a programar codigo y cuente con 4-8 horas disponibles
+                a la semana </p>
+            <p>*menores de edad deberan entrar acompñados de un adulto</p>
+        </footer>
+    </main>
+
 </body>
+
 </html>
